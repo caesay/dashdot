@@ -1,5 +1,5 @@
 # BASE #
-FROM node:18-alpine AS base
+FROM nvidia/cuda:12.2.0-base-ubuntu20.04 AS base
 
 WORKDIR /app
 ARG TARGETPLATFORM
