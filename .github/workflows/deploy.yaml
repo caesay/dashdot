@@ -27,12 +27,12 @@ jobs:
         with:
           username: caesay
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-          cache: 'yarn'
-      - if: ${{ github.ref_name == 'main' }}
-        run: yarn --immutable --immutable-cache
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '18.x'
+      #     cache: 'yarn'
+      # - if: ${{ github.ref_name == 'main' }}
+      #   run: yarn --immutable --immutable-cache
       # - if: ${{ github.ref_name == 'main' }}
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
